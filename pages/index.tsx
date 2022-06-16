@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Text, Container, Row } from "@nextui-org/react";
+import { Text, Container, Row, Tooltip } from "@nextui-org/react";
 
 import styles from "../styles/Home.module.css";
 
@@ -40,6 +40,21 @@ const Home: NextPage<PropsType> = ({ tgPath }: PropsType) => {
           <p className={styles.description}>
             My name is Andre, currently I'm building this to site for my blog
             and small experiments
+          </p>
+        </Row>
+        <Row>
+          <p className={styles.description}>
+            Here is fun challenge for ya!, try to open my other site 😛👉
+            <Tooltip
+              content={"Yes, yes, it's an actual site."}
+              rounded
+              color="invert"
+              placement="topStart"
+            >
+              <Text weight="bold" size={20}>
+                andre0x0.x
+              </Text>
+            </Tooltip>
           </p>
         </Row>
       </main>
