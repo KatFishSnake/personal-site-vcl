@@ -44,7 +44,7 @@ const Home: NextPage<PropsType> = ({ tgPath }: PropsType) => {
         </Row>
         <Row>
           <p className={styles.description}>
-            Here is fun challenge for ya!, try to open my other site 😛👉
+            Here is a fun challenge for ya!, try opening my other site 😛👉
             <Tooltip
               content={"Yes, yes, it's an actual site."}
               rounded
